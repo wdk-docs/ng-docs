@@ -1,0 +1,54 @@
+{
+    "docs": [
+        {
+            "location": "/", 
+            "text": "Angular CLI\n\n\n\u6982\u8ff0\n\n\nThe Angular CLI is a tool to initialize, develop, scaffold  and maintain \nAngular\n applications\n\n\n\u5165\u95e8\n\n\nTo install the Angular CLI:\n\n\nnpm install -g @angular/cli\n\n\n\n\nGenerating and serving an Angular project via a development server \nCreate\n and \nrun\n a new project:\n\n\nng new my-project\n\ncd\n my-project\nng serve\n\n\n\n\nNavigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.\n\n\n\u6346\u7ed1\n\n\nAll builds make use of bundling, and using the \n--prod\n flag in  \nng build --prod\n or \nng serve --prod\n will also make use of uglifying and tree-shaking functionality.\n\n\n\u5355\u5143\u6d4b\u8bd5\n\n\nng \ntest\n\n\n\n\n\nTests will execute after a build is executed via \nKarma\n, and it will automatically watch your files for changes. You can run tests a single time via \n--watch=false\n or \n--single-run\n.\n\n\n\u7aef\u5230\u7aef\u6d4b\u8bd5\n\n\nng e2e\n\n\n\n\n\u5728\u8fd0\u884c\u6d4b\u8bd5\u4e4b\u524d\uff0c\u8bf7\u786e\u4fdd\u60a8\u901a\u8fc7\u201cng serve\u201d\u670d\u52a1\u5e94\u7528\u7a0b\u5e8f\u3002\n\u7aef\u5230\u7aef\u6d4b\u8bd5\u901a\u8fc7\n\u91cf\u89d2\u5668\n\u8fd0\u884c.\n\n\n\u5176\u4ed6\u547d\u4ee4\n\n\n\n\nng new\n\n\nng serve\n\n\nng generate\n\n\nng lint\n\n\nng test\n\n\nng e2e\n\n\nng build\n\n\nng get/ng set\n\n\nng doc\n\n\nng eject\n\n\nng xi18n\n\n\nng update\n\n\n\n\n\u914d\u7f6e\u67b6\u6784\n\n\n\n\n\u914d\u7f6e\u67b6\u6784\n\n\n\n\n\u9644\u52a0\u4fe1\u606f\n\n\n\u6709\u51e0\u4e2a\n\u6545\u4e8b\n\u4f1a\u5f15\u5bfc\u60a8\u8bbe\u7f6eAngular\u5e94\u7528\u7a0b\u5e8f\u7684\u5176\u4ed6\u65b9\u9762\u3002", 
+            "title": "\u6982\u8ff0"
+        }, 
+        {
+            "location": "/#angular-cli", 
+            "text": "", 
+            "title": "Angular CLI"
+        }, 
+        {
+            "location": "/#_1", 
+            "text": "The Angular CLI is a tool to initialize, develop, scaffold  and maintain  Angular  applications", 
+            "title": "\u6982\u8ff0"
+        }, 
+        {
+            "location": "/#_2", 
+            "text": "To install the Angular CLI:  npm install -g @angular/cli  Generating and serving an Angular project via a development server  Create  and  run  a new project:  ng new my-project cd  my-project\nng serve  Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.", 
+            "title": "\u5165\u95e8"
+        }, 
+        {
+            "location": "/#_3", 
+            "text": "All builds make use of bundling, and using the  --prod  flag in   ng build --prod  or  ng serve --prod  will also make use of uglifying and tree-shaking functionality.", 
+            "title": "\u6346\u7ed1"
+        }, 
+        {
+            "location": "/#_4", 
+            "text": "ng  test   Tests will execute after a build is executed via  Karma , and it will automatically watch your files for changes. You can run tests a single time via  --watch=false  or  --single-run .", 
+            "title": "\u5355\u5143\u6d4b\u8bd5"
+        }, 
+        {
+            "location": "/#_5", 
+            "text": "ng e2e  \u5728\u8fd0\u884c\u6d4b\u8bd5\u4e4b\u524d\uff0c\u8bf7\u786e\u4fdd\u60a8\u901a\u8fc7\u201cng serve\u201d\u670d\u52a1\u5e94\u7528\u7a0b\u5e8f\u3002\n\u7aef\u5230\u7aef\u6d4b\u8bd5\u901a\u8fc7 \u91cf\u89d2\u5668 \u8fd0\u884c.", 
+            "title": "\u7aef\u5230\u7aef\u6d4b\u8bd5"
+        }, 
+        {
+            "location": "/#_6", 
+            "text": "ng new  ng serve  ng generate  ng lint  ng test  ng e2e  ng build  ng get/ng set  ng doc  ng eject  ng xi18n  ng update", 
+            "title": "\u5176\u4ed6\u547d\u4ee4"
+        }, 
+        {
+            "location": "/#_7", 
+            "text": "\u914d\u7f6e\u67b6\u6784", 
+            "title": "\u914d\u7f6e\u67b6\u6784"
+        }, 
+        {
+            "location": "/#_8", 
+            "text": "\u6709\u51e0\u4e2a \u6545\u4e8b \u4f1a\u5f15\u5bfc\u60a8\u8bbe\u7f6eAngular\u5e94\u7528\u7a0b\u5e8f\u7684\u5176\u4ed6\u65b9\u9762\u3002", 
+            "title": "\u9644\u52a0\u4fe1\u606f"
+        }
+    ]
+}
