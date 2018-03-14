@@ -11,17 +11,17 @@
 
 ## 概述
 
-The Angular CLI is a tool to initialize, develop, scaffold  and maintain [Angular](https://angular.io) applications
+Angular CLI是初始化，开发，支撑和维护[Angular](https://angular.io)应用程序的工具
 
 ## 入门
 
-To install the Angular CLI:
+要安装Angular CLI：
 
 ```bash
 npm install -g @angular/cli
 ```
 
-Generating and serving an Angular project via a development server [Create](new) and [run](serve) a new project:
+通过开发服务器生成并提供Angular项目[创建](new)和[运行](serve)新项目：
 
 ```bash
 ng new my-project
@@ -29,11 +29,11 @@ cd my-project
 ng serve
 ```
 
-Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
+导航到http://localhost:4200/. 如果您更改任何源文件，该应用程序将自动重新加载。
 
 ## 捆绑
 
-All builds make use of bundling, and using the `--prod` flag in  `ng build --prod` or `ng serve --prod` will also make use of uglifying and tree-shaking functionality.
+所有版本都使用捆绑， 并在`ng build --prod`或`ng serve --prod`中使用`--prod`标志也将利用`uglifying`和`tree-shaking`摇晃功能。
 
 ## 单元测试
 
@@ -41,7 +41,7 @@ All builds make use of bundling, and using the `--prod` flag in  `ng build --pro
 ng test
 ```
 
-Tests will execute after a build is executed via [Karma](http://karma-runner.github.io/0.13/index.html), and it will automatically watch your files for changes. You can run tests a single time via `--watch=false` or `--single-run`.
+测试将在通过[Karma](http://karma-runner.github.io/0.13/index.html)执行构建之后执行, 它会自动监视你的文件的变化。 您可以通过`--watch = false`或`--single-run`运行一次测试。
 
 ## 端到端测试
 
