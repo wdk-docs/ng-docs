@@ -3,8 +3,8 @@ site_description: Angular CLI中文文档
 site_author: Nosy
 copyright: '版权 &copy; 2018 wohugb.github.io'
 
-repo_name: wohugb/wangdake
-repo_url: https://github.com/wohugb/wangdake
+repo_name: wohugb/ng-docs
+repo_url: https://github.com/wohugb/ng-docs
 edit_uri: ""
 
 theme:
