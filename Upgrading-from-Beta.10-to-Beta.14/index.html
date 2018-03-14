@@ -1,0 +1,1438 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="Angular CLI中文文档">
+      
+      
+      
+        <meta name="author" content="Nosy">
+      
+      
+        <meta name="lang:clipboard.copy" content="复制">
+      
+        <meta name="lang:clipboard.copied" content="已复制">
+      
+        <meta name="lang:search.language" content="jp">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="没有找到符合条件的结果">
+      
+        <meta name="lang:search.result.one" content="找到 1 个符合条件的结果">
+      
+        <meta name="lang:search.result.other" content="# 个符合条件的结果">
+      
+        <meta name="lang:search.tokenizer" content="[\uff0c\u3002]+">
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-0.17.3, mkdocs-material-2.7.0">
+    
+    
+      
+        <title>从Beta.10升级到Beta.14 - 角令文档</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.78aab2dc.css">
+      
+        <link rel="stylesheet" href="../assets/stylesheets/application-palette.6079476c.css">
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+      
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
+    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      <a href="#steps-to-migrate" tabindex="1" class="md-skip">
+        跳转至
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href=".." title="角令文档" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                角令文档
+              </span>
+              <span class="md-header-nav__topic">
+                从Beta.10升级到Beta.14
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            键入以开始搜索
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/wohugb/wangdake" title="前往 Github 仓库" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      wohugb/wangdake
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+        
+
+<nav class="md-tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+      <a href=".." title="概述" class="md-tabs__link md-tabs__link--active">
+        概述
+      </a>
+    
+  </li>
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../cli/" title="命令" class="md-tabs__link">
+          命令
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../generate/" title="ng generate" class="md-tabs__link">
+          ng generate
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../include/angular-flex/" title="引入" class="md-tabs__link">
+          引入
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../stories/configure-hmr/" title="配置" class="md-tabs__link">
+          配置
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../stories/" title="stories" class="md-tabs__link">
+          stories
+        </a>
+      
+    </li>
+  
+
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </ul>
+  </div>
+</nav>
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    <span class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </span>
+    角令文档
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/wohugb/wangdake" title="前往 Github 仓库" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      wohugb/wangdake
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="概述" class="md-nav__link">
+      概述
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      命令
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        命令
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../cli/" title="概述" class="md-nav__link">
+      概述
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../cli/build/" title="ng build" class="md-nav__link">
+      ng build
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../cli/config/" title="ng config" class="md-nav__link">
+      ng config
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../cli/doc/" title="ng doc" class="md-nav__link">
+      ng doc
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../cli/e2e/" title="ng e2e" class="md-nav__link">
+      ng e2e
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../cli/eject/" title="ng eject" class="md-nav__link">
+      ng eject
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../cli/lint/" title="ng lint" class="md-nav__link">
+      ng lint
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../cli/new/" title="ng new" class="md-nav__link">
+      ng new
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../cli/serve/" title="ng serve" class="md-nav__link">
+      ng serve
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../cli/test/" title="ng test" class="md-nav__link">
+      ng test
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../cli/update/" title="ng update" class="md-nav__link">
+      ng update
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      ng generate
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        ng generate
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../generate/" title="ng generate" class="md-nav__link">
+      ng generate
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../generate/class/" title="ng generate class" class="md-nav__link">
+      ng generate class
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../generate/component/" title="ng generate component" class="md-nav__link">
+      ng generate component
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../generate/directive/" title="ng generate directive" class="md-nav__link">
+      ng generate directive
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../generate/enum/" title="ng generate enum" class="md-nav__link">
+      ng generate enum
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../generate/guard/" title="ng generate guard" class="md-nav__link">
+      ng generate guard
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../generate/interface/" title="ng generate interface" class="md-nav__link">
+      ng generate interface
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../generate/module/" title="ng generate module" class="md-nav__link">
+      ng generate module
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../generate/pipe/" title="ng generate pipe" class="md-nav__link">
+      ng generate pipe
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../generate/service/" title="ng generate service" class="md-nav__link">
+      ng generate service
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      引入
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        引入
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../include/angular-flex/" title="引入角曲" class="md-nav__link">
+      引入角曲
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../include/angular-material/" title="引入角料" class="md-nav__link">
+      引入角料
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../include/angularfire/" title="引入角火" class="md-nav__link">
+      引入角火
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../include/bootstrap/" title="引入bootstrap" class="md-nav__link">
+      引入bootstrap
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../include/font-awesome/" title="引入font awesome" class="md-nav__link">
+      引入font awesome
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      配置
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        配置
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../stories/configure-hmr/" title="配置hmr" class="md-nav__link">
+      配置hmr
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../stories/application-environments/" title="应用环境" class="md-nav__link">
+      应用环境
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../stories/application-environments/" title="资产配置" class="md-nav__link">
+      资产配置
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../global/lib/" title="全局库" class="md-nav__link">
+      全局库
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../global/scripts/" title="全局脚本" class="md-nav__link">
+      全局脚本
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../global/styles/" title="全局风格" class="md-nav__link">
+      全局风格
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../stories/css-preprocessors/" title="css预处理器" class="md-nav__link">
+      css预处理器
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../stories/third-party-lib/" title="第三方库" class="md-nav__link">
+      第三方库
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../stories/autocompletion/" title="自动完成" class="md-nav__link">
+      自动完成
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../stories/autoprefixer/" title="autoprefixer" class="md-nav__link">
+      autoprefixer
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../stories/budgets/" title="budgets" class="md-nav__link">
+      budgets
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../stories/continuous-integration/" title="持续集成" class="md-nav__link">
+      持续集成
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../stories/github-pages/" title="github页面" class="md-nav__link">
+      github页面
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../stories/universal-rendering/" title="通用渲染" class="md-nav__link">
+      通用渲染
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../stories/multiple-apps/" title="多应用" class="md-nav__link">
+      多应用
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../stories/proxy/" title="代理" class="md-nav__link">
+      代理
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../stories/routing/" title="路由" class="md-nav__link">
+      路由
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../stories/using-corporate-proxy/" title="使用公司代理" class="md-nav__link">
+      使用公司代理
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../stories/internationalization/" title="国际化" class="md-nav__link">
+      国际化
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      stories
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        stories
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../stories/" title="故事" class="md-nav__link">
+      故事
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../stories/1.0-update/" title="1.0更新" class="md-nav__link">
+      1.0更新
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../stories/rc-update/" title="rc更新" class="md-nav__link">
+      rc更新
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../stories/rc.0-update/" title="rc.0更新" class="md-nav__link">
+      rc.0更新
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../stories/code-coverage/" title="代码覆盖率" class="md-nav__link">
+      代码覆盖率
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../stories/disk-serve/" title="磁盘服务" class="md-nav__link">
+      磁盘服务
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../stories/linked-library/" title="链接库" class="md-nav__link">
+      链接库
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../stories/moving-into-the-cli/" title="移入CLI" class="md-nav__link">
+      移入CLI
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../stories/moving-out-of-the-cli/" title="移出CLI" class="md-nav__link">
+      移出CLI
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../DevHandbook/" title="DevHandbook" class="md-nav__link">
+      DevHandbook
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../LifeOfAFeature/" title="LifeOfAFeature" class="md-nav__link">
+      LifeOfAFeature
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Upgrading-from-Beta.10-to-Beta.12/" title="从Beta.10升级到Beta.12" class="md-nav__link">
+      从Beta.10升级到Beta.12
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+    <a href="./" title="从Beta.10升级到Beta.14" class="md-nav__link md-nav__link--active">
+      从Beta.10升级到Beta.14
+    </a>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../xi18n/" title="xi18n" class="md-nav__link">
+      xi18n
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <p>We changed the build system between beta.10 and beta.14, from SystemJS to Webpack. And with it comes a lot of benefits. To take advantage of these, your app built with the old beta will need to migrate.</p>
+<p>This page documents the steps to follow to migrate your old application to using the newest beta.</p>
+<h1 id="steps-to-migrate">Steps to Migrate<a class="headerlink" href="#steps-to-migrate" title="Permanent link">&para;</a></h1>
+<p>This guide assumes your application is using SystemJS created with the <code>beta.10</code> and is up to date to &gt;= Angular <code>RC6</code>. Also, make sure you committed everything from your project to Git.</p>
+<ol>
+<li>
+<p>Upgrade to the latest CLI globally:</p>
+<div class="codehilite"><pre><span></span>npm uninstall -g angular-cli
+npm cache clean
+npm install -g angular-cli@latest
+</pre></div>
+
+</li>
+<li>
+<p>Create a new migration project:</p>
+<div class="codehilite"><pre><span></span>ng new migration-project
+</pre></div>
+
+</li>
+<li>
+<p>Backup the new <code>src/</code> to a different folder. We need those files later on.</p>
+<div class="codehilite"><pre><span></span>mv src/ src.webpacktemplate/
+</pre></div>
+
+</li>
+<li>
+<p>Replace the <code>src/</code> folder with your application's <code>src/</code> folder.</p>
+<div class="codehilite"><pre><span></span>mv <span class="si">${</span><span class="nv">OLD_PATH</span><span class="si">}</span>/src src
+</pre></div>
+
+</li>
+<li>
+<p>Replace the <code>e2e/</code> folder with your application's <code>e2e/</code> folder.</p>
+<div class="codehilite"><pre><span></span>mv <span class="si">${</span><span class="nv">OLD_PATH</span><span class="si">}</span>/e2e e2e
+</pre></div>
+
+</li>
+<li>
+<p>Delete files that are not needed anymore.</p>
+<div class="codehilite"><pre><span></span>rm src/system-config.ts
+rm src/typings.d.ts
+</pre></div>
+
+</li>
+<li>
+<p>Copy files that are needed from a new project.</p>
+<div class="codehilite"><pre><span></span>cp src.webpacktemplate/polyfills.ts src/
+cp src.webpacktemplate/styles.css src/
+cp src.webpacktemplate/test.ts src/
+cp src.webpacktemplate/tsconfig.json src/
+cp src.webpacktemplate/typings.d.ts src/
+</pre></div>
+
+</li>
+<li>
+<p>In most cases, you can override your <code>src/main.ts</code> with the one in <code>src.webpacktemplate/main.ts</code>, but you might want to be careful if you have custom modifications to it.</p>
+</li>
+<li>
+<p>In most cases, you can override your <code>src/index.html</code> with the one in <code>src.webpacktemplate/index.html</code>, but you might want to be careful if you have custom modifications to it.</p>
+</li>
+<li>
+<p>Copy over your environment files. These are now part of the app and not in the root of your repo, and <code>environment.dev.ts</code> is now just <code>environment.ts</code>.</p>
+<div class="codehilite"><pre><span></span>mv <span class="si">${</span><span class="nv">OLD_PATH</span><span class="si">}</span>/config/environment.dev.ts src/environments/environment.ts
+mv <span class="si">${</span><span class="nv">OLD_PATH</span><span class="si">}</span>/config/environment.prod.ts src/environments/environment.prod.ts
+</pre></div>
+
+<p>If you have any custom environments don't forget to move them too.</p>
+<p>Environments are now listed in the angular-cli.json. Make sure those files matches the files on your disk. More importantly, because they're part of your application, their paths are relative to your <code>main.ts</code>.</p>
+</li>
+<li>
+<p>Install npm dependencies that you were using. These may include (but not limited to):</p>
+</li>
+<li>Angular Material 2 (need HammerJS typings)</li>
+<li>Angularfire2</li>
+<li>Bootstrap</li>
+<li>Firebase</li>
+<li>jQuery</li>
+<li>Moment</li>
+<li>
+<p>...</p>
+<div class="codehilite"><pre><span></span>npm install --save <span class="si">${</span><span class="nv">LIBRARY</span><span class="si">}</span>
+</pre></div>
+
+<p>These libraries might have typings necessary, which you can install using:</p>
+<div class="codehilite"><pre><span></span>npm install --save-dev @types/<span class="si">${</span><span class="nv">LIBRARY</span><span class="si">}</span>
+</pre></div>
+
+<p>Remember to copy any configuration or documentation files you have. For example, you might have a <code>firebase.json</code> file in the root of your repo. Don't forget your <code>LICENSE</code> and <code>README.md</code> file!</p>
+</li>
+<li>
+<p>Remove all mention of <code>moduleId: module.id</code>. In webpack, <code>module.id</code> is a number but Angular expect a string.</p>
+</li>
+<li>
+<p>Copy over your assets directory. Assets are now part of the app and not in the root of your repo.</p>
+<div class="codehilite"><pre><span></span>cp -R <span class="si">${</span><span class="nv">OLD_PATH</span><span class="si">}</span>/public/ src/assets/
+</pre></div>
+
+<p>Make sure to also remap your assets in your code. The new assets are served from <code>/assets/</code>.</p>
+</li>
+<li>
+<p>Finally, <strong>if you're using SASS or LESS</strong>, you need to rename your <code>styleUrls</code> in all your files. Webpack understands LESS and SASS so you can use <code>styleUrls: ['my-component.scss']</code> in your component and it will be transcompiled automatically.</p>
+</li>
+<li>
+<p>After all this, make sure you don't need anything else from the <code>src.webpacktemplate/</code> directory, try to <code>ng build</code>. If everything works, chances are you're good to go. Delete the <code>src.webpacktemplate/</code> directory.</p>
+</li>
+<li>
+<p>Time to replace the git folder so you don't lose your history. Delete the <code>.git/</code> file in the new migration project. Then copy over your old <code>.git/</code> folder to replace it.</p>
+<div class="codehilite"><pre><span></span>rm -rf .git/
+cp -R <span class="si">${</span><span class="nv">OLD_PATH</span><span class="si">}</span>/.git .
+</pre></div>
+
+</li>
+<li>
+<p>Go ahead and <code>ng serve</code> your app, then look at the resulting website. Adjust and adapt your code according to errors.</p>
+</li>
+</ol>
+                
+                  
+                
+              
+              
+                
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../Upgrading-from-Beta.10-to-Beta.12/" title="从Beta.10升级到Beta.12" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  后退
+                </span>
+                从Beta.10升级到Beta.12
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../xi18n/" title="xi18n" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  前进
+                </span>
+                xi18n
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            版权 &copy; 2018 wohugb.github.io
+          </div>
+        
+        powered by
+        <a href="http://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+  <div class="md-footer-social">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+      <a href="http://wohugb.github.io" class="md-footer-social__link fa fa-globe"></a>
+    
+      <a href="https://github.com/wohugb" class="md-footer-social__link fa fa-github-alt"></a>
+    
+      <a href="https://twitter.com/wohugb" class="md-footer-social__link fa fa-twitter"></a>
+    
+      <a href="https://linkedin.com/in/wohugb" class="md-footer-social__link fa fa-linkedin"></a>
+    
+  </div>
+
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.8eb9be28.js"></script>
+      
+        
+        
+          
+          <script src="../assets/javascripts/lunr/lunr.stemmer.support.js"></script>
+          
+            
+              
+                <script src="../assets/javascripts/lunr/tinyseg.js"></script>
+              
+              
+                <script src="../assets/javascripts/lunr/lunr.jp.js"></script>
+              
+            
+          
+          
+        
+      
+      <script>app.initialize({version:"0.17.3",url:{base:".."}})</script>
+      
+    
+    
+      
+    
+  </body>
+</html>
