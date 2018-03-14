@@ -52,3 +52,67 @@ markdown_extensions:
 
 pages:
   - 概述: index.md
+  - 命令:
+    - 概述: cli/index.md
+    - ng build: cli/build.md
+    - ng config: cli/config.md
+    - ng doc: cli/doc.md
+    - ng e2e: cli/e2e.md
+    - ng eject: cli/eject.md
+    - ng lint: cli/lint.md
+    - ng new: cli/new.md
+    - ng serve: cli/serve.md
+    - ng test: cli/test.md
+    - ng update: cli/update.md
+  - ng generate:
+    - ng generate: generate/index.md
+    - ng generate class: generate/class.md
+    - ng generate component: generate/component.md
+    - ng generate directive: generate/directive.md
+    - ng generate enum: generate/enum.md
+    - ng generate guard: generate/guard.md
+    - ng generate interface: generate/interface.md
+    - ng generate module: generate/module.md
+    - ng generate pipe: generate/pipe.md
+    - ng generate service: generate/service.md
+  - 引入:
+    - 引入角曲: include/angular-flex.md
+    - 引入角料: include/angular-material.md
+    - 引入角火: include/angularfire.md
+    - 引入bootstrap: include/bootstrap.md
+    - 引入font awesome: include/font-awesome.md
+  - 配置:
+    - 配置hmr: stories/configure-hmr.md
+    - 应用环境: stories/application-environments.md
+    - 资产配置: stories/application-environments.md
+    - 全局库: global/lib.md
+    - 全局脚本: global/scripts.md
+    - 全局风格: global/styles.md
+    - css预处理器: stories/css-preprocessors.md
+    - 第三方库: stories/third-party-lib.md
+    - 自动完成: stories/autocompletion.md
+    - autoprefixer: stories/autoprefixer.md
+    - budgets: stories/budgets.md
+    - 持续集成: stories/continuous-integration.md
+    - github页面: stories/github-pages.md
+    - 通用渲染: stories/universal-rendering.md
+    - 多应用: stories/multiple-apps.md
+    - 代理: stories/proxy.md
+    - 路由: stories/routing.md
+    - 使用公司代理: stories/using-corporate-proxy.md
+    - 国际化: stories/internationalization.md
+  - stories:
+    - 故事: stories/index.md
+    - 1.0更新: stories/1.0-update.md
+    - rc更新: stories/rc-update.md
+    - rc.0更新: stories/rc.0-update.md
+    - 代码覆盖率: stories/code-coverage.md
+    - 磁盘服务: stories/disk-serve.md
+    - 链接库: stories/linked-library.md
+    - 移入CLI: stories/moving-into-the-cli.md
+    - 移出CLI: stories/moving-out-of-the-cli.md
+  - DevHandbook: DevHandbook.md
+  - LifeOfAFeature: LifeOfAFeature.md
+  - 从Beta.10升级到Beta.12: Upgrading-from-Beta.10-to-Beta.12.md
+  - 从Beta.10升级到Beta.14: Upgrading-from-Beta.10-to-Beta.14.md
+  - xi18n: xi18n.md

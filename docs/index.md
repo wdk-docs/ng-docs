@@ -1,5 +1,14 @@
 # Angular CLI
 
+> 本文档整理翻译自 Angular CLI GitHub [Wiki](https://github.com/angular/angular-cli.wiki.git) 页面
+
+> 工具使用：以下是文档制作工具，如果有更好的文档制作方法，欢迎在[Issues](https://github.com/wohugb/ng-docs/issues)中留言
+
+> * 编辑器 VS Code, 插件修改自[chun.vscode-translate]作为即时翻译用
+> * 文档语言markdown
+> * 文档生成器mkdocs,使用mkdocs-material模板
+> * 寄存于gh-page
+
 ## 概述
 
 The Angular CLI is a tool to initialize, develop, scaffold  and maintain [Angular](https://angular.io) applications

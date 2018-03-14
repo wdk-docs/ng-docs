@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    
+    <url>
+     <loc>/</loc>
+     <lastmod>2018-03-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+        
+    <url>
+     <loc>/cli/</loc>
+     <lastmod>2018-03-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/cli/build/</loc>
+     <lastmod>2018-03-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/cli/config/</loc>
+     <lastmod>2018-03-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/cli/doc/</loc>
+     <lastmod>2018-03-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/cli/e2e/</loc>
+     <lastmod>2018-03-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/cli/eject/</loc>
+     <lastmod>2018-03-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/cli/lint/</loc>
+     <lastmod>2018-03-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/cli/new/</loc>
+     <lastmod>2018-03-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/cli/serve/</loc>
+     <lastmod>2018-03-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/cli/test/</loc>
+     <lastmod>2018-03-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/cli/update/</loc>
+     <lastmod>2018-03-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>/generate/</loc>
+     <lastmod>2018-03-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/generate/class/</loc>
+     <lastmod>2018-03-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/generate/component/</loc>
+     <lastmod>2018-03-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/generate/directive/</loc>
+     <lastmod>2018-03-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/generate/enum/</loc>
+     <lastmod>2018-03-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/generate/guard/</loc>
+     <lastmod>2018-03-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/generate/interface/</loc>
+     <lastmod>2018-03-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/generate/module/</loc>
+     <lastmod>2018-03-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/generate/pipe/</loc>
+     <lastmod>2018-03-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/generate/service/</loc>
+     <lastmod>2018-03-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>/include/angular-flex/</loc>
+     <lastmod>2018-03-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/include/angular-material/</loc>
+     <lastmod>2018-03-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/include/angularfire/</loc>
+     <lastmod>2018-03-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/include/bootstrap/</loc>
+     <lastmod>2018-03-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/include/font-awesome/</loc>
+     <lastmod>2018-03-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>/stories/configure-hmr/</loc>
+     <lastmod>2018-03-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/stories/application-environments/</loc>
+     <lastmod>2018-03-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/stories/application-environments/</loc>
+     <lastmod>2018-03-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/global/lib/</loc>
+     <lastmod>2018-03-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/global/scripts/</loc>
+     <lastmod>2018-03-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/global/styles/</loc>
+     <lastmod>2018-03-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/stories/css-preprocessors/</loc>
+     <lastmod>2018-03-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/stories/third-party-lib/</loc>
+     <lastmod>2018-03-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/stories/autocompletion/</loc>
+     <lastmod>2018-03-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/stories/autoprefixer/</loc>
+     <lastmod>2018-03-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/stories/budgets/</loc>
+     <lastmod>2018-03-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/stories/continuous-integration/</loc>
+     <lastmod>2018-03-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/stories/github-pages/</loc>
+     <lastmod>2018-03-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/stories/universal-rendering/</loc>
+     <lastmod>2018-03-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/stories/multiple-apps/</loc>
+     <lastmod>2018-03-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/stories/proxy/</loc>
+     <lastmod>2018-03-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/stories/routing/</loc>
+     <lastmod>2018-03-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/stories/using-corporate-proxy/</loc>
+     <lastmod>2018-03-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/stories/internationalization/</loc>
+     <lastmod>2018-03-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>/stories/</loc>
+     <lastmod>2018-03-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/stories/1.0-update/</loc>
+     <lastmod>2018-03-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/stories/rc-update/</loc>
+     <lastmod>2018-03-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/stories/rc.0-update/</loc>
+     <lastmod>2018-03-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/stories/code-coverage/</loc>
+     <lastmod>2018-03-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/stories/disk-serve/</loc>
+     <lastmod>2018-03-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/stories/linked-library/</loc>
+     <lastmod>2018-03-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/stories/moving-into-the-cli/</loc>
+     <lastmod>2018-03-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/stories/moving-out-of-the-cli/</loc>
+     <lastmod>2018-03-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+    <url>
+     <loc>/DevHandbook/</loc>
+     <lastmod>2018-03-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
+     <loc>/LifeOfAFeature/</loc>
+     <lastmod>2018-03-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
+     <loc>/Upgrading-from-Beta.10-to-Beta.12/</loc>
+     <lastmod>2018-03-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
+     <loc>/Upgrading-from-Beta.10-to-Beta.14/</loc>
+     <lastmod>2018-03-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
+     <loc>/xi18n/</loc>
+     <lastmod>2018-03-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+</urlset>

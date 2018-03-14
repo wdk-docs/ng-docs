@@ -1,0 +1,1904 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="Angular CLI中文文档">
+      
+      
+      
+        <meta name="author" content="Nosy">
+      
+      
+        <meta name="lang:clipboard.copy" content="复制">
+      
+        <meta name="lang:clipboard.copied" content="已复制">
+      
+        <meta name="lang:search.language" content="jp">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="没有找到符合条件的结果">
+      
+        <meta name="lang:search.result.one" content="找到 1 个符合条件的结果">
+      
+        <meta name="lang:search.result.other" content="# 个符合条件的结果">
+      
+        <meta name="lang:search.tokenizer" content="[\uff0c\u3002]+">
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-0.17.3, mkdocs-material-2.7.0">
+    
+    
+      
+        <title>rc更新 - 角令文档</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.78aab2dc.css">
+      
+        <link rel="stylesheet" href="../../assets/stylesheets/application-palette.6079476c.css">
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+      
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
+    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      <a href="#angular-cli-rc-migration-guide" tabindex="1" class="md-skip">
+        跳转至
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../.." title="角令文档" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                角令文档
+              </span>
+              <span class="md-header-nav__topic">
+                rc更新
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            键入以开始搜索
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/wohugb/wangdake" title="前往 Github 仓库" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      wohugb/wangdake
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+        
+
+  
+
+<nav class="md-tabs md-tabs--active" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+      <a href="../.." title="概述" class="md-tabs__link">
+        概述
+      </a>
+    
+  </li>
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../cli/" title="命令" class="md-tabs__link">
+          命令
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../generate/" title="ng generate" class="md-tabs__link">
+          ng generate
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../include/angular-flex/" title="引入" class="md-tabs__link">
+          引入
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../configure-hmr/" title="配置" class="md-tabs__link">
+          配置
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../" title="stories" class="md-tabs__link md-tabs__link--active">
+          stories
+        </a>
+      
+    </li>
+  
+
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </ul>
+  </div>
+</nav>
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    <span class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </span>
+    角令文档
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/wohugb/wangdake" title="前往 Github 仓库" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      wohugb/wangdake
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="概述" class="md-nav__link">
+      概述
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      命令
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        命令
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../cli/" title="概述" class="md-nav__link">
+      概述
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../cli/build/" title="ng build" class="md-nav__link">
+      ng build
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../cli/config/" title="ng config" class="md-nav__link">
+      ng config
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../cli/doc/" title="ng doc" class="md-nav__link">
+      ng doc
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../cli/e2e/" title="ng e2e" class="md-nav__link">
+      ng e2e
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../cli/eject/" title="ng eject" class="md-nav__link">
+      ng eject
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../cli/lint/" title="ng lint" class="md-nav__link">
+      ng lint
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../cli/new/" title="ng new" class="md-nav__link">
+      ng new
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../cli/serve/" title="ng serve" class="md-nav__link">
+      ng serve
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../cli/test/" title="ng test" class="md-nav__link">
+      ng test
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../cli/update/" title="ng update" class="md-nav__link">
+      ng update
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      ng generate
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        ng generate
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../generate/" title="ng generate" class="md-nav__link">
+      ng generate
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../generate/class/" title="ng generate class" class="md-nav__link">
+      ng generate class
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../generate/component/" title="ng generate component" class="md-nav__link">
+      ng generate component
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../generate/directive/" title="ng generate directive" class="md-nav__link">
+      ng generate directive
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../generate/enum/" title="ng generate enum" class="md-nav__link">
+      ng generate enum
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../generate/guard/" title="ng generate guard" class="md-nav__link">
+      ng generate guard
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../generate/interface/" title="ng generate interface" class="md-nav__link">
+      ng generate interface
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../generate/module/" title="ng generate module" class="md-nav__link">
+      ng generate module
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../generate/pipe/" title="ng generate pipe" class="md-nav__link">
+      ng generate pipe
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../generate/service/" title="ng generate service" class="md-nav__link">
+      ng generate service
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      引入
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        引入
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../include/angular-flex/" title="引入角曲" class="md-nav__link">
+      引入角曲
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../include/angular-material/" title="引入角料" class="md-nav__link">
+      引入角料
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../include/angularfire/" title="引入角火" class="md-nav__link">
+      引入角火
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../include/bootstrap/" title="引入bootstrap" class="md-nav__link">
+      引入bootstrap
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../include/font-awesome/" title="引入font awesome" class="md-nav__link">
+      引入font awesome
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      配置
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        配置
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../configure-hmr/" title="配置hmr" class="md-nav__link">
+      配置hmr
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../application-environments/" title="应用环境" class="md-nav__link">
+      应用环境
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../application-environments/" title="资产配置" class="md-nav__link">
+      资产配置
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../global/lib/" title="全局库" class="md-nav__link">
+      全局库
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../global/scripts/" title="全局脚本" class="md-nav__link">
+      全局脚本
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../global/styles/" title="全局风格" class="md-nav__link">
+      全局风格
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../css-preprocessors/" title="css预处理器" class="md-nav__link">
+      css预处理器
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../third-party-lib/" title="第三方库" class="md-nav__link">
+      第三方库
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../autocompletion/" title="自动完成" class="md-nav__link">
+      自动完成
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../autoprefixer/" title="autoprefixer" class="md-nav__link">
+      autoprefixer
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../budgets/" title="budgets" class="md-nav__link">
+      budgets
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../continuous-integration/" title="持续集成" class="md-nav__link">
+      持续集成
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../github-pages/" title="github页面" class="md-nav__link">
+      github页面
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../universal-rendering/" title="通用渲染" class="md-nav__link">
+      通用渲染
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../multiple-apps/" title="多应用" class="md-nav__link">
+      多应用
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../proxy/" title="代理" class="md-nav__link">
+      代理
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../routing/" title="路由" class="md-nav__link">
+      路由
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../using-corporate-proxy/" title="使用公司代理" class="md-nav__link">
+      使用公司代理
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../internationalization/" title="国际化" class="md-nav__link">
+      国际化
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6" checked>
+    
+    <label class="md-nav__link" for="nav-6">
+      stories
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        stories
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../" title="故事" class="md-nav__link">
+      故事
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../1.0-update/" title="1.0更新" class="md-nav__link">
+      1.0更新
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        rc更新
+      </label>
+    
+    <a href="./" title="rc更新" class="md-nav__link md-nav__link--active">
+      rc更新
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">目录</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#angularcli" title="@angular/cli" class="md-nav__link">
+    @angular/cli
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#angular-clijson" title=".angular-cli.json" class="md-nav__link">
+    .angular-cli.json
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#schema" title="Schema" class="md-nav__link">
+    Schema
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#polyfills" title="Polyfills" class="md-nav__link">
+    Polyfills
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#environments" title="Environments" class="md-nav__link">
+    Environments
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#linting" title="Linting" class="md-nav__link">
+    Linting
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#generator-defaults" title="Generator defaults" class="md-nav__link">
+    Generator defaults
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#one-tsconfig-per-app" title="One tsconfig per app" class="md-nav__link">
+    One tsconfig per app
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#packagejson" title="package.json" class="md-nav__link">
+    package.json
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#karmaconfjs" title="karma.conf.js" class="md-nav__link">
+    karma.conf.js
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#protractorconfjs" title="protractor.conf.js" class="md-nav__link">
+    protractor.conf.js
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#linting-rules" title="Linting rules" class="md-nav__link">
+    Linting rules
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../rc.0-update/" title="rc.0更新" class="md-nav__link">
+      rc.0更新
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../code-coverage/" title="代码覆盖率" class="md-nav__link">
+      代码覆盖率
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../disk-serve/" title="磁盘服务" class="md-nav__link">
+      磁盘服务
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../linked-library/" title="链接库" class="md-nav__link">
+      链接库
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../moving-into-the-cli/" title="移入CLI" class="md-nav__link">
+      移入CLI
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../moving-out-of-the-cli/" title="移出CLI" class="md-nav__link">
+      移出CLI
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../DevHandbook/" title="DevHandbook" class="md-nav__link">
+      DevHandbook
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../LifeOfAFeature/" title="LifeOfAFeature" class="md-nav__link">
+      LifeOfAFeature
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../Upgrading-from-Beta.10-to-Beta.12/" title="从Beta.10升级到Beta.12" class="md-nav__link">
+      从Beta.10升级到Beta.12
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../Upgrading-from-Beta.10-to-Beta.14/" title="从Beta.10升级到Beta.14" class="md-nav__link">
+      从Beta.10升级到Beta.14
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../xi18n/" title="xi18n" class="md-nav__link">
+      xi18n
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">目录</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#angularcli" title="@angular/cli" class="md-nav__link">
+    @angular/cli
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#angular-clijson" title=".angular-cli.json" class="md-nav__link">
+    .angular-cli.json
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#schema" title="Schema" class="md-nav__link">
+    Schema
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#polyfills" title="Polyfills" class="md-nav__link">
+    Polyfills
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#environments" title="Environments" class="md-nav__link">
+    Environments
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#linting" title="Linting" class="md-nav__link">
+    Linting
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#generator-defaults" title="Generator defaults" class="md-nav__link">
+    Generator defaults
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#one-tsconfig-per-app" title="One tsconfig per app" class="md-nav__link">
+    One tsconfig per app
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#packagejson" title="package.json" class="md-nav__link">
+    package.json
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#karmaconfjs" title="karma.conf.js" class="md-nav__link">
+    karma.conf.js
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#protractorconfjs" title="protractor.conf.js" class="md-nav__link">
+    protractor.conf.js
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#linting-rules" title="Linting rules" class="md-nav__link">
+    Linting rules
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="angular-cli-rc-migration-guide">Angular CLI RC migration guide<a class="headerlink" href="#angular-cli-rc-migration-guide" title="Permanent link">&para;</a></h1>
+<p>In this migration guide we'll be looking at some of the major changes to CLI projects in the
+last two months.</p>
+<p>Most of these changes were not breaking changes and your project should work fine without them.</p>
+<p>But if you've been waiting for the perfect time to update, this is it!
+Along with major rebuild speed increases, we've been busy adding a lot of features.</p>
+<p>RC means release candidate and we intend to stick to it.
+Unless there is a major breaking bug, we will not change the public surface of the API and
+its generated projects.</p>
+<p>This means that a project upgraded now should need no more code changes all the way to 1.0.</p>
+<p>Documentation has also completely moved to <a href="https://github.com/angular/angular-cli/wiki">the wiki</a>.
+The new <a href="https://github.com/angular/angular-cli/wiki/stories">Stories</a> section covers common usage
+scenarios, so be sure to have a look!</p>
+<p>Below are the changes between a project generated two months ago, with <code>1.0.0-beta.24</code> and
+a <code>1.0.0-rc.1</code> project.
+If you kept your project up to date you might have a lot of these already.</p>
+<p>You can find more details about changes between versions in <a href="https://github.com/angular/angular-cli/blob/master/CHANGELOG.md">CHANGELOG.md</a>.</p>
+<p>If you prefer, you can also generate a new project in a separate folder using
+ <code>ng new upgrade-project --skip-install</code> and compare the differences.</p>
+<h2 id="angularcli">@angular/cli<a class="headerlink" href="#angularcli" title="Permanent link">&para;</a></h2>
+<p>Angular CLI can now be found on NPM under <code>@angular/cli</code> instead of <code>angular-cli</code>, and has a
+minimum requirement of Node 6.9.0 or higher, together with NPM 3 or higher.</p>
+<p>If you're using Angular CLI <code>beta.28</code> or less, you need to uninstall the <code>angular-cli</code> package.
+<div class="codehilite"><pre><span></span>npm uninstall -g angular-cli
+npm uninstall --save-dev angular-cli
+</pre></div></p>
+<p>To update Angular CLI to a new version, you must update both the global package and your project's
+local package.</p>
+<p>Global package:
+<div class="codehilite"><pre><span></span>npm uninstall -g @angular/cli
+npm cache clean
+npm install -g @angular/cli@latest
+</pre></div></p>
+<p>Local project package:
+<div class="codehilite"><pre><span></span>rm -rf node_modules dist <span class="c1"># use rmdir on Windows</span>
+npm install --save-dev @angular/cli@latest
+npm install
+</pre></div></p>
+<h2 id="angular-clijson">.angular-cli.json<a class="headerlink" href="#angular-clijson" title="Permanent link">&para;</a></h2>
+<p><code>angular-cli.json</code> is now <code>.angular-cli.json</code>, but we still accept the old config file name.</p>
+<p>A few new properties have changed in it:</p>
+<h3 id="schema">Schema<a class="headerlink" href="#schema" title="Permanent link">&para;</a></h3>
+<p>Add the <code>$schema</code> property above project for handy IDE support on your config file:</p>
+<div class="codehilite"><pre><span></span>&quot;$schema&quot;: &quot;./node_modules/@angular/cli/lib/config/schema.json&quot;,
+</pre></div>
+
+<h3 id="polyfills">Polyfills<a class="headerlink" href="#polyfills" title="Permanent link">&para;</a></h3>
+<p>There is now a dedicated entry for polyfills (<a href="https://github.com/angular/angular-cli/pull/3812">#3812</a>)
+inside <code>apps[0].polyfills</code>, between <code>main</code> and <code>test</code>:</p>
+<div class="codehilite"><pre><span></span>&quot;main&quot;: &quot;main.ts&quot;,
+&quot;polyfills&quot;: &quot;polyfills.ts&quot;,
+&quot;test&quot;: &quot;test.ts&quot;,
+</pre></div>
+
+<p>Add it and remove <code>import './polyfills.ts';</code> from <code>src/main.ts</code> and <code>src/test.ts</code>.</p>
+<p>We also added a lot of descriptive comments to the existing <code>src/polyfills.ts</code> file, explaining
+which polyfills are needed for what browsers.
+Be sure to check it out in a new project!</p>
+<h3 id="environments">Environments<a class="headerlink" href="#environments" title="Permanent link">&para;</a></h3>
+<p>A new <code>environmentSource</code> entry (<a href="https://github.com/angular/angular-cli/pull/4705">#4705</a>)
+replaces the previous source entry inside environments.</p>
+<p>To migrate angular-cli.json follow the example below:</p>
+<p>Before:
+<div class="codehilite"><pre><span></span>&quot;environments&quot;: {
+  &quot;source&quot;: &quot;environments/environment.ts&quot;,
+  &quot;dev&quot;: &quot;environments/environment.ts&quot;,
+  &quot;prod&quot;: &quot;environments/environment.prod.ts&quot;
+}
+</pre></div></p>
+<p>After:</p>
+<div class="codehilite"><pre><span></span>&quot;environmentSource&quot;: &quot;environments/environment.ts&quot;,
+&quot;environments&quot;: {
+  &quot;dev&quot;: &quot;environments/environment.ts&quot;,
+  &quot;prod&quot;: &quot;environments/environment.prod.ts&quot;
+}
+</pre></div>
+
+<h3 id="linting">Linting<a class="headerlink" href="#linting" title="Permanent link">&para;</a></h3>
+<p>The CLI now uses the TSLint API (<a href="https://github.com/angular/angular-cli/pull/4248">#4248</a>)
+to lint several TS projects at once.</p>
+<p>There is a new <code>lint</code> entry in <code>.angular-cli.json</code> between <code>e2e</code> and <code>test</code> where all linting
+targets are listed:</p>
+<div class="codehilite"><pre><span></span>&quot;e2e&quot;: {
+  &quot;protractor&quot;: {
+    &quot;config&quot;: &quot;./protractor.conf.js&quot;
+  }
+},
+&quot;lint&quot;: [
+  {
+    &quot;project&quot;: &quot;src/tsconfig.app.json&quot;
+  },
+  {
+    &quot;project&quot;: &quot;src/tsconfig.spec.json&quot;
+  },
+  {
+    &quot;project&quot;: &quot;e2e/tsconfig.e2e.json&quot;
+  }
+],
+&quot;test&quot;: {
+  &quot;karma&quot;: {
+    &quot;config&quot;: &quot;./karma.conf.js&quot;
+  }
+},
+</pre></div>
+
+<h3 id="generator-defaults">Generator defaults<a class="headerlink" href="#generator-defaults" title="Permanent link">&para;</a></h3>
+<p>Now you can list generator defaults per generator (<a href="https://github.com/angular/angular-cli/pull/4389">#4389</a>)
+in <code>defaults</code>.</p>
+<p>Instead of:
+<div class="codehilite"><pre><span></span>&quot;defaults&quot;: {
+  &quot;styleExt&quot;: &quot;css&quot;,
+  &quot;prefixInterfaces&quot;: false,
+  &quot;inline&quot;: {
+    &quot;style&quot;: false,
+    &quot;template&quot;: false
+  },
+  &quot;spec&quot;: {
+    &quot;class&quot;: false,
+    &quot;component&quot;: true,
+    &quot;directive&quot;: true,
+    &quot;module&quot;: false,
+    &quot;pipe&quot;: true,
+    &quot;service&quot;: true
+  }
+}
+</pre></div></p>
+<p>You can instead list the flags as they appear on <a href="https://github.com/angular/angular-cli/wiki/generate-component">the generator command</a>:
+<div class="codehilite"><pre><span></span>&quot;defaults&quot;: {
+  &quot;styleExt&quot;: &quot;css&quot;,
+  &quot;component&quot;: {
+    &quot;inlineTemplate&quot;: false,
+    &quot;spec&quot;: true
+  }
+}
+</pre></div></p>
+<h2 id="one-tsconfig-per-app">One tsconfig per app<a class="headerlink" href="#one-tsconfig-per-app" title="Permanent link">&para;</a></h2>
+<p>CLI projects now use one tsconfig per app (<a href="https://github.com/angular/angular-cli/pull/4924">#4924</a>).</p>
+<ul>
+<li><code>src/tsconfig.app.json</code>: configuration for the Angular app.
+<div class="codehilite"><pre><span></span>{
+  &quot;compilerOptions&quot;: {
+    &quot;sourceMap&quot;: true,
+    &quot;declaration&quot;: false,
+    &quot;moduleResolution&quot;: &quot;node&quot;,
+    &quot;emitDecoratorMetadata&quot;: true,
+    &quot;experimentalDecorators&quot;: true,
+    &quot;lib&quot;: [
+      &quot;es2016&quot;,
+      &quot;dom&quot;
+    ],
+    &quot;outDir&quot;: &quot;../out-tsc/app&quot;,
+    &quot;target&quot;: &quot;es5&quot;,
+    &quot;module&quot;: &quot;es2015&quot;,
+    &quot;baseUrl&quot;: &quot;&quot;,
+    &quot;types&quot;: []
+  },
+  &quot;exclude&quot;: [
+    &quot;test.ts&quot;,
+    &quot;**/*.spec.ts&quot;
+  ]
+}
+</pre></div></li>
+<li><code>src/tsconfig.spec.json</code>: configuration for the unit tests.
+<div class="codehilite"><pre><span></span>{
+  &quot;compilerOptions&quot;: {
+    &quot;sourceMap&quot;: true,
+    &quot;declaration&quot;: false,
+    &quot;moduleResolution&quot;: &quot;node&quot;,
+    &quot;emitDecoratorMetadata&quot;: true,
+    &quot;experimentalDecorators&quot;: true,
+    &quot;lib&quot;: [
+      &quot;es2016&quot;
+    ],
+    &quot;outDir&quot;: &quot;../out-tsc/spec&quot;,
+    &quot;module&quot;: &quot;commonjs&quot;,
+    &quot;target&quot;: &quot;es6&quot;,
+    &quot;baseUrl&quot;: &quot;&quot;,
+    &quot;types&quot;: [
+      &quot;jasmine&quot;,
+      &quot;node&quot;
+    ]
+  },
+  &quot;files&quot;: [
+    &quot;test.ts&quot;
+  ],
+  &quot;include&quot;: [
+    &quot;**/*.spec.ts&quot;
+  ]
+}
+</pre></div></li>
+<li><code>e2e/tsconfig.e2e.json</code>: configuration for the e2e tests.
+<div class="codehilite"><pre><span></span>{
+  &quot;compilerOptions&quot;: {
+    &quot;sourceMap&quot;: true,
+    &quot;declaration&quot;: false,
+    &quot;moduleResolution&quot;: &quot;node&quot;,
+    &quot;emitDecoratorMetadata&quot;: true,
+    &quot;experimentalDecorators&quot;: true,
+    &quot;lib&quot;: [
+      &quot;es2016&quot;
+    ],
+    &quot;outDir&quot;: &quot;../dist/out-tsc-e2e&quot;,
+    &quot;module&quot;: &quot;commonjs&quot;,
+    &quot;target&quot;: &quot;es6&quot;,
+    &quot;types&quot;:[
+      &quot;jasmine&quot;,
+      &quot;node&quot;
+    ]
+  }
+}
+</pre></div></li>
+</ul>
+<p>There is an additional root-level <code>tsconfig.json</code> that is used for IDE integration.
+<div class="codehilite"><pre><span></span>{
+  &quot;compileOnSave&quot;: false,
+  &quot;compilerOptions&quot;: {
+    &quot;outDir&quot;: &quot;./dist/out-tsc&quot;,
+    &quot;sourceMap&quot;: true,
+    &quot;declaration&quot;: false,
+    &quot;moduleResolution&quot;: &quot;node&quot;,
+    &quot;emitDecoratorMetadata&quot;: true,
+    &quot;experimentalDecorators&quot;: true,
+    &quot;target&quot;: &quot;es5&quot;,
+    &quot;typeRoots&quot;: [
+      &quot;node_modules/@types&quot;
+    ],
+    &quot;lib&quot;: [
+      &quot;es2016&quot;,
+      &quot;dom&quot;
+    ]
+  }
+}
+</pre></div></p>
+<p>You can delete <code>e2e/tsconfig.json</code> and <code>src/tsconfig.json</code> after adding these.</p>
+<p>Also update <code>.angular-cli.json</code> to use them inside <code>apps[0]</code>:</p>
+<div class="codehilite"><pre><span></span>&quot;tsconfig&quot;: &quot;tsconfig.app.json&quot;,
+&quot;testTsconfig&quot;: &quot;tsconfig.spec.json&quot;,
+</pre></div>
+
+<p>Then update <code>protractor.conf.js</code> to use the e2e config as well:
+<div class="codehilite"><pre><span></span><span class="n">beforeLaunch</span><span class="o">:</span> <span class="kd">function</span><span class="o">()</span> <span class="o">{</span>
+  <span class="n">require</span><span class="o">(</span><span class="s1">&#39;ts-node&#39;</span><span class="o">).</span><span class="n">register</span><span class="o">({</span>
+    <span class="n">project</span><span class="o">:</span> <span class="s1">&#39;e2e&#39;</span>
+  <span class="o">});</span>
+<span class="o">},</span>
+</pre></div></p>
+<p>These configs have an <code>types</code> array where you should add any package you install via <code>@types/*</code>.
+This array helps keep typings isolated to the apps that really need them and avoid problems with
+duplicate typings.</p>
+<p>For instance, the unit test <code>tsconfig</code> has <code>jasmine</code> and <code>node</code>, which correspond to
+<code>@types/jasmine</code> and <code>@types/node</code>.
+Add any typings you've installed to the appropriate <code>tsconfig</code> as well.</p>
+<h2 id="packagejson">package.json<a class="headerlink" href="#packagejson" title="Permanent link">&para;</a></h2>
+<p>We've updated a lot of packages over the last months in order to keep projects up to date.</p>
+<p>Additions or removals are found in bold below.</p>
+<p>Packages in <code>dependencies</code>:
+- <code>@angular/*</code> packages now have a <code>^2.4.0</code> minimum (<code>^3.4.0</code> for router)
+- <code>core-js</code> remains unchanged at <code>^2.4.1</code>
+- <code>rxjs</code> to <code>^5.1.0</code>
+- <code>ts-helpers</code> was <strong>removed</strong>
+- <code>zone.js</code> to <code>^0.7.6</code></p>
+<p>Packages in <code>devDependencies</code>:
+- <code>@angular/cli</code> at <code>1.0.0-rc.0</code> replaces <code>angular-cli</code>
+- <code>@angular/compiler-cli</code> is also at <code>^2.4.0</code>
+- <code>@types/jasmine</code> remains unchanged and pinned at <code>2.5.38</code>
+- <code>@types/node</code> was updated to <code>~6.0.60</code>
+- <code>codelyzer</code> was updated to <code>~2.0.0</code>
+- <code>jasmine-core</code> was updated to <code>~2.5.2</code>
+- <code>jasmine-spec-reporter</code> was updated to <code>~3.2.0</code>
+- <code>karma</code> was updated to <code>~1.4.1</code>
+- <code>karma-chrome-launcher</code> was updated to <code>~2.0.0</code>
+- <code>karma-cli</code> was updated to <code>~1.0.1</code>
+- <code>karma-jasmine</code> was updated to <code>~1.1.0</code>
+- <code>karma-jasmine-html-reporter</code> was <strong>added</strong> at <code>^0.2.2</code>
+- <code>karma-coverage-istanbul-reporter</code> was <strong>added</strong> at <code>^0.2.0</code>, replacing <code>karma-remap-istanbul</code>
+- <code>karma-remap-istanbul</code> was <strong>removed</strong>
+- <code>protractor</code> was updated to <code>~5.1.0</code>
+- <code>ts-node</code> was updated to <code>~2.0.0</code>
+- <code>tslint</code> was updated to <code>~4.4.2</code>
+- <code>typescript</code> was updated to <code>~2.0.0</code></p>
+<p>See the <a href="#karma.conf.js">karma</a> and <a href="#protractor.conf.js">protractor</a> sections below for more
+information on changed packages.</p>
+<p>The <a href="#Linting rules">Linting rules</a> section contains a list of rules that changed due to updates.</p>
+<p>We also updated the scripts section to make it more simple:</p>
+<div class="codehilite"><pre><span></span>&quot;scripts&quot;: {
+  &quot;ng&quot;: &quot;ng&quot;,
+  &quot;start&quot;: &quot;ng serve&quot;,
+  &quot;build&quot;: &quot;ng build&quot;,
+  &quot;test&quot;: &quot;ng test&quot;,
+  &quot;lint&quot;: &quot;ng lint&quot;,
+  &quot;e2e&quot;: &quot;ng e2e&quot;
+},
+</pre></div>
+
+<h2 id="karmaconfjs">karma.conf.js<a class="headerlink" href="#karmaconfjs" title="Permanent link">&para;</a></h2>
+<p>Karma configuration suffered some changes to improve the code-coverage functionality,
+use the new <code>@angular/cli</code> package, and the new HTML reporter.</p>
+<p>In the <code>frameworks</code> array update the CLI package to <code>@angular/cli</code>.</p>
+<p>In the <code>plugins</code> array:
+- add <code>require('karma-jasmine-html-reporter')</code> and <code>require('karma-coverage-istanbul-reporter')</code>
+- remove <code>require('karma-remap-istanbul')</code>
+- update the CLI plugin to <code>require('@angular/cli/plugins/karma')</code></p>
+<p>Add a new <code>client</code> option just above <code>patterns</code>:
+<div class="codehilite"><pre><span></span>client:{
+  clearContext: false // leave Jasmine Spec Runner output visible in browser
+},
+files: [
+</pre></div></p>
+<p>Change the preprocessor to use the new CLI package:
+<div class="codehilite"><pre><span></span>preprocessors: {
+  &#39;./src/test.ts&#39;: [&#39;@angular/cli&#39;]
+},
+</pre></div></p>
+<p>Replace <code>remapIstanbulReporter</code> with <code>coverageIstanbulReporter</code>:
+<div class="codehilite"><pre><span></span>coverageIstanbulReporter: {
+  reports: [ &#39;html&#39;, &#39;lcovonly&#39; ],
+  fixWebpackSourcePaths: true
+},
+</pre></div></p>
+<p>Remove the config entry from <code>angularCli</code>:
+<div class="codehilite"><pre><span></span>angularCli: {
+  environment: &#39;dev&#39;
+},
+</pre></div></p>
+<p>Update the reporters to use <code>coverage-istanbul</code> instead of <code>karma-remap-istanbul</code>, and
+add <code>kjhtml</code> (short for karma-jasmine-html-reporter):
+<div class="codehilite"><pre><span></span><span class="n">reporters</span><span class="o">:</span> <span class="n">config</span><span class="o">.</span><span class="na">angularCli</span> <span class="o">&amp;&amp;</span> <span class="n">config</span><span class="o">.</span><span class="na">angularCli</span><span class="o">.</span><span class="na">codeCoverage</span>
+          <span class="o">?</span> <span class="o">[</span><span class="s1">&#39;progress&#39;</span><span class="o">,</span> <span class="s1">&#39;coverage-istanbul&#39;</span><span class="o">]</span>
+          <span class="o">:</span> <span class="o">[</span><span class="s1">&#39;progress&#39;</span><span class="o">,</span> <span class="s1">&#39;kjhtml&#39;</span><span class="o">],</span>
+</pre></div></p>
+<h2 id="protractorconfjs">protractor.conf.js<a class="headerlink" href="#protractorconfjs" title="Permanent link">&para;</a></h2>
+<p>Protractor was updated to the new 5.x major version, but you shouldn't need to change much
+to take advantage of all its new features.</p>
+<p>Replace the spec reporter import from:
+<div class="codehilite"><pre><span></span>var SpecReporter = require(&#39;jasmine-spec-reporter&#39;);
+</pre></div>
+to
+<div class="codehilite"><pre><span></span>const { SpecReporter } = require(&#39;jasmine-spec-reporter&#39;);
+</pre></div></p>
+<p>Remove <code>useAllAngular2AppRoots: true</code>.</p>
+<p>Update <code>beforeLaunch</code> as described in <a href="#one-tsconfig-per-app">One tsconfig per app</a>:
+<div class="codehilite"><pre><span></span><span class="n">beforeLaunch</span><span class="o">:</span> <span class="kd">function</span><span class="o">()</span> <span class="o">{</span>
+  <span class="n">require</span><span class="o">(</span><span class="s1">&#39;ts-node&#39;</span><span class="o">).</span><span class="n">register</span><span class="o">({</span>
+    <span class="n">project</span><span class="o">:</span> <span class="s1">&#39;e2e&#39;</span>
+  <span class="o">});</span>
+<span class="o">},</span>
+</pre></div></p>
+<p>Update <code>onPrepare</code>:
+<div class="codehilite"><pre><span></span><span class="nt">onPrepare</span><span class="o">()</span> <span class="p">{</span>
+  <span class="err">jasmine.getEnv().addReporter(new</span> <span class="err">SpecReporter({</span> <span class="n">spec</span><span class="p">:</span> <span class="err">{</span> <span class="n">displayStacktrace</span><span class="o">:</span> <span class="n">true</span> <span class="p">}</span> <span class="err">}</span><span class="o">));</span>
+<span class="err">}</span>
+</pre></div></p>
+<h2 id="linting-rules">Linting rules<a class="headerlink" href="#linting-rules" title="Permanent link">&para;</a></h2>
+<p>The updated versions of <code>tslint</code> and <code>codelyzer</code> contain a few rule changes that you should
+apply to your <code>tslint.json</code>:</p>
+<p>Add these new rules:
+<div class="codehilite"><pre><span></span>&quot;callable-types&quot;: true,
+&quot;import-blacklist&quot;: [true, &quot;rxjs&quot;],
+&quot;import-spacing&quot;: true,
+&quot;interface-over-type-literal&quot;: true,
+&quot;no-empty-interface&quot;: true,
+&quot;no-string-throw&quot;: true,
+&quot;prefer-const&quot;: true,
+&quot;typeof-compare&quot;: true,
+&quot;unified-signatures&quot;: true,
+</pre></div></p>
+<p>Update <code>no-inferrable-types</code> to <code>"no-inferrable-types": [true, "ignore-params"]</code>.</p>
+                
+                  
+                
+              
+              
+                
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../1.0-update/" title="1.0更新" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  后退
+                </span>
+                1.0更新
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../rc.0-update/" title="rc.0更新" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  前进
+                </span>
+                rc.0更新
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            版权 &copy; 2018 wohugb.github.io
+          </div>
+        
+        powered by
+        <a href="http://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+  <div class="md-footer-social">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+      <a href="http://wohugb.github.io" class="md-footer-social__link fa fa-globe"></a>
+    
+      <a href="https://github.com/wohugb" class="md-footer-social__link fa fa-github-alt"></a>
+    
+      <a href="https://twitter.com/wohugb" class="md-footer-social__link fa fa-twitter"></a>
+    
+      <a href="https://linkedin.com/in/wohugb" class="md-footer-social__link fa fa-linkedin"></a>
+    
+  </div>
+
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.8eb9be28.js"></script>
+      
+        
+        
+          
+          <script src="../../assets/javascripts/lunr/lunr.stemmer.support.js"></script>
+          
+            
+              
+                <script src="../../assets/javascripts/lunr/tinyseg.js"></script>
+              
+              
+                <script src="../../assets/javascripts/lunr/lunr.jp.js"></script>
+              
+            
+          
+          
+        
+      
+      <script>app.initialize({version:"0.17.3",url:{base:"../.."}})</script>
+      
+    
+    
+      
+    
+  </body>
+</html>
