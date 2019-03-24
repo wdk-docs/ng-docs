@@ -72,7 +72,7 @@
     <code>--module</code> (aliases: <code>-m</code>)
   </p>
   <p>
-    Allows specification of the declaring module's file name (e.g `app.module.ts`).
+    允许指定声明模块的文件名称（例如`app.module.ts`）。
   </p>
 </details>
 

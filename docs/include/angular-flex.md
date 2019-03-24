@@ -16,7 +16,7 @@ Install the  library and add the dependency to package.json...
 npm install --save @angular/flex-layout
 ```
 
-Or install the nightly build using:
+或者使用以下命令安装每晚构建：
 
 ```bash
 npm i --save @angular/flex-layout-builds
@@ -24,10 +24,10 @@ npm i --save @angular/flex-layout-builds
 
 Import the Angular Flex-Layout NgModule into your app module...
 ```javascript
-//in src/app/app.module.ts 
+//in src/app/app.module.ts
 
 import { FlexLayoutModule } from '@angular/flex-layout';
-// other imports 
+// other imports
 
 @NgModule({
   imports: [
@@ -77,7 +77,7 @@ Among what you should see are - a light yellow header that is the entire width o
 
 <br/>
 
-### More Info 
+### More Info
 
  - [Installation](https://github.com/angular/flex-layout/wiki/Using-Angular-CLI)
  - [API Overview](https://github.com/angular/flex-layout/wiki/Declarative-API-Overview)
